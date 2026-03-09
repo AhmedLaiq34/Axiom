@@ -25,6 +25,11 @@ Right now, Axiom is deployed as a proof-of-concept demo specifically tailored fo
 
 ---
 
+![Axiom Landing Page](./assets/Landing-Page.png)
+![Axiom Tutors Page](./assets/Tutors-Page.png)
+![Axiom Demo Chat](./assets/Chat-Page.png)
+
+
 ## System Architecture
 
 Axiom operates on a decoupled architecture, ensuring scalability and separation of concerns.
