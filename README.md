@@ -1,10 +1,10 @@
-# Axiom (UniGuardian)
+# Axiom
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
 
-Axiom (formerly UniGuardian) is a full-stack, AI-powered conversational tutor and assistant. Built to provide intelligent, context-aware responses, it leverages advanced Retrieval-Augmented Generation (RAG) to serve accurate information from a custom knowledge base.
+Axiom is a full-stack, AI-powered conversational tutor. Built to provide intelligent, context-aware responses, it leverages advanced Retrieval-Augmented Generation (RAG) to serve accurate information from a custom knowledge base, tailored to FAST NUCES University curriculum.
 
 This project demonstrates proficiency in building scalable full-stack applications, integrating state-of-the-art Large Language Models (LLMs), managing vector databases, and creating responsive, modern user interfaces.
 
