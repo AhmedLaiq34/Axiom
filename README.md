@@ -12,6 +12,19 @@ This repository serves as a showcase of modern full-stack engineering, combining
   
 ---
 
+### Motivation: The FAST NUCES Context
+
+Using generalized AI tools like ChatGPT to study for FAST NUCES exams usually leads to a few specific problems:
+* **Scope Creep:** Generic LLMs often explain concepts using advanced or alternative methodologies that are correct in the industry, but out of bounds for the specific course syllabus. 
+* **Exam Blindness:** Standard AI has no idea how FAST exams are structured, the difficulty level, or what kind of questions actually appear on the paper.
+
+Axiom was built to fix this. By restricting the RAG pipeline exclusively to university-specific lecture slides, assignments, and past exam papers, the AI is forced to stay within the course's strict boundaries. It acts as a specialized tutor that actually understands the FAST curriculum instead of just giving generalized programming advice.
+
+**Current State & Future Scaling**
+Right now, Axiom is deployed as a proof-of-concept demo specifically tailored for the **Programming Fundamentals** course. However, the architecture is fully decoupled and scalable. Expanding the tutor to cover other core subjects simply requires ingesting the relevant course materials into the ChromaDB vector store.
+
+---
+
 ## System Architecture
 
 Axiom operates on a decoupled architecture, ensuring scalability and separation of concerns.
