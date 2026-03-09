@@ -48,8 +48,12 @@ A custom document loader designed to handle difficult, real-world academic mater
 Axiom uses a highly sophisticated multi-stage processing pipeline built with LCEL (LangChain Expression Language).
 1.  **The Rewriter:** A dedicated prompt transforms the user's conversational query (based on chat history) into a highly optimized, standalone search query for the vector database.
 2.  **The Retriever & Formatter:** Executes the MMR search. Crucially, it formats the retrieved text, stripping duplicates and prefixing every chunk with a warning if the text originated from OCR, allowing the LLM to account for artifact errors.
-3.  **The RAG Generator:** The primary LLM operates under strict systemic guardrails: it *must* act as a Teaching Assistant, it *must* only use the provided concepts, and it *must* refuse if the context is insufficient.
-4.  **The Refiner (Llama 4 Scout Polish):** A specialized secondary prompt chain acts as a pedagogical editor. It automatically repairs common OCR artifacts (e.g., `vo1d` → `void`), cleans up formatting, and ensures an encouraging, academic tone before the response is finally returned to the user.
+3.  **The RAG Generator (Llama-3.3-70b-versatile via Groq):** The primary massive LLM handles the heavy lifting of synthesizing the MMR-retrieved chunks. It operates under strict systemic guardrails: acting as a Teaching Assistant, exclusively using the provided concepts, and refusing if the context is insufficient. We chose Llama 3.3 70B via Groq for its unparalleled inference speed and immense reasoning capabilities.
+4.  **The Refiner (Llama-4-Scout-17b via Groq):** A specialized secondary model acts as a pedagogical editor. Being a smaller, highly-instruct-tuned model, it is perfectly suited for fast, low-latency cleanup tasks. It automatically repairs common OCR artifacts (e.g., `vo1d` → `void`), cleans up formatting, and ensures an encouraging, academic tone before the response is finally returned to the user.
+
+### 🧠 The Embedding Strategy
+*   **Model:** `Qwen/Qwen3-Embedding-0.6B` (via HuggingFace)
+*   **Why Qwen3?** We chose to deploy a local, state-of-the-art embedding model rather than relying on an external API (like OpenAI). This 0.6B parameter model offers top-tier retrieval performance (MTEB leaderboard) while remaining small enough to run inference entirely on the CPU (`device: 'cpu'`). This guarantees zero API costs for database vectors and ensures absolute data privacy for the ingested academic materials.
 
 ---
 
