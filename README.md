@@ -1,10 +1,10 @@
-# Axiom (UniGuardian)
+# Axiom
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
 
-Axiom (formerly UniGuardian) is a sophisticated, full-stack AI conversational tutor. Born from the need for highly accurate, context-aware academic assistance, Axiom leverages an advanced **Retrieval-Augmented Generation (RAG)** pipeline. Unlike generic chatbots, Axiom's responses are strictly grounded in custom-ingested course materials (PDFs, slides, scanned documents), providing students with reliable, verifiable answers complete with exact source and page citations.
+Axiom is a  full-stack AI conversational tutor. Born from the need for highly accurate, context-aware academic assistance, Axiom leverages an advanced **Retrieval-Augmented Generation (RAG)** pipeline. Unlike generic chatbots, Axiom's responses are strictly grounded in custom-ingested course materials (PDFs, slides, scanned documents), providing students with reliable, verifiable answers complete with exact source and page citations.
 
 This repository serves as a showcase of modern full-stack engineering, combining scalable frontend frameworks, robust Python API design, and cutting-edge machine learning integration.
 
