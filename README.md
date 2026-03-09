@@ -8,6 +8,8 @@ Axiom (formerly UniGuardian) is a sophisticated, full-stack AI conversational tu
 
 This repository serves as a showcase of modern full-stack engineering, combining scalable frontend frameworks, robust Python API design, and cutting-edge machine learning integration.
 
+*   **Live Website:** [https://axiom-tutor.vercel.app](https://axiom-tutor.vercel.app)
+  
 ---
 
 ## 🏗️ System Architecture
@@ -90,7 +92,7 @@ Create `.env` in `axiom-backend/`:
 ```env
 UPSTASH_REDIS_REST_URL=your_redis_url
 UPSTASH_REDIS_REST_TOKEN=your_redis_token
-# Add your LLM keys
+GROQ_API_KEY=your_api_key
 ```
 
 Start the API:
@@ -109,9 +111,3 @@ npm run dev
 
 ---
 
-## 🤝 Repositories & Links
-*   **GitHub Repository:** [https://github.com/AhmedLaiq34/Axiom](https://github.com/AhmedLaiq34/Axiom)
-*   **Frontend Deployment Idea:** [https://axiom-tutor.vercel.app](https://axiom-tutor.vercel.app)
-
----
-*Built with ❤️ to demonstrate modern full-stack workflows, scalable API structures, and the immense potential of LLM/RAG integrations.*
