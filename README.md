@@ -24,7 +24,7 @@ Axiom was built to fix this. By restricting the RAG pipeline exclusively to univ
 Right now, Axiom is deployed as a proof-of-concept demo specifically tailored for the **Programming Fundamentals** course. However, the architecture is fully decoupled and scalable. Expanding the tutor to cover other core subjects simply requires ingesting the relevant course materials into the ChromaDB vector store.
 
 ---
-![Axiom Architecture Diagram](assets/User  Student.png)
+![Axiom Architecture Diagram](assets/Architecture-Diagram.png)
 ![Axiom Landing Page](./assets/Landing-Page.png)
 ![Axiom Tutors Page](./assets/Tutors-Page.png)
 ![Axiom Demo Chat](./assets/Chat-Page.png)
